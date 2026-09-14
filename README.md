@@ -7,13 +7,15 @@ Bash-скрипт перевіряє список сайтів через curl (
 
 cd task1
 ./check_websites.sh
-## Завдання 2 — Computer-Systems-hw02
+
+## Завдання 2 — task2
 
 FastAPI-застосунок, запакований у Docker + PostgreSQL через docker-compose.
 
 Запуск:
 
-cd Computer-Systems-hw02
+cd task2
+
 docker-compose up --build
 
 Після старту:
