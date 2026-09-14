@@ -16,7 +16,7 @@ FastAPI-застосунок, запакований у Docker + PostgreSQL че
 
 cd task2
 
-docker-compose up --build
+docker compose up --build
 
 Після старту:
 
