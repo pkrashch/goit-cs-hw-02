@@ -1,0 +1,24 @@
+services:
+  app:
+    build: .
+    container_name: hw02_app
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+    restart: on-failure
+
+  db:
+    image: postgres:15
+    container_name: hw02_db
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: "567234"
+      POSTGRES_DB: hw02
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:
